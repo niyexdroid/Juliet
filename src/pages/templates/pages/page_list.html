@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for obj in object_list %}
+    <p><strong>{{obj.id}} . <a href='{{obj.get_absolute_url}}'>{{obj.title}}</a></strong></p>
+    {% endfor %}
+
+{% endblock content %}

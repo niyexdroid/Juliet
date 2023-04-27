@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Post {{object.id}}. {{object.title}}</h1>
+<p> {% if object.content != None and object.content != '' %}
+        {{object.content}} {% else %} Content will be available soon!!!
+    {% endif %}
+    
+<button><a href='../'>GO Back</a></button>
+{% endblock content %}
